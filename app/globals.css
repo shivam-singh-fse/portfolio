@@ -11,7 +11,17 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --color-white: #ffffff;
+    --color-gray: #c4c4c4;
+    --color-black: #000000;
+    --color-purple: #8000ff;
+    --color-light-purple: rgb(207, 89, 230);
+    --color-light-blue: #6BC5F8;
   }
+}
+
+html{
+  overflow-y: hidden;
 }
 
 body {
@@ -24,4 +34,78 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.header-wrapper {
+  min-width: 80%;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+
+
+  .header__hero--heading-gradient{
+  background: linear-gradient(
+  -45deg,
+  var(--color-light-blue),
+  var(--color-light-purple),
+  var(--color-light-blue),
+  var(--color-light-purple)
+  );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% 400%;
+    animation: gradient 3s ease infinite;
+  }
+}
+
+.experience img {
+  -webkit-filter: drop-shadow(0px 0px 4px rgba(255,255,255,0.80));
+  -webkit-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+
+}
+
+.experience{
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.experience img:hover {
+   -webkit-filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.8));
+ }
+
+.link-container > a:hover{
+  color: var(--color-light-blue);
+}
+
+#flip {
+  height:54px;
+  overflow:hidden;
+}
+
+#flip > div > div {
+  margin-bottom:45px;
+  display:inline-block;
+}
+
+#flip div:first-child {
+  animation: show 5s linear infinite;
+}
+
+#flip div div {
+  background:inherit;
+}
+#flip div:first-child div {
+  background:inherit;
+}
+#flip div:last-child div {
+  background:inherit;
+}
+
+@keyframes show {
+  0% {margin-top:-90px;}
+  25% {margin-top:-90px;}
+  50% {margin-top:0px;}
+  75% {margin-top:0px;}
+  100% {margin-top:-90px;}
 }
