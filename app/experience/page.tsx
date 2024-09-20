@@ -49,7 +49,7 @@ interface CardProps {
 function Card(props: CardProps) {
     return (
         <div className="flex flex-col justify-center w-1/2">
-            <span>{props.cardTitle}  <span className="text-lg">({props.fromDate} - {props.toDate})</span></span>
+            <span>{props.cardTitle} <span className="text-lg">({props.fromDate} - {props.toDate})</span></span>
             <span className="font-[family-name:var(--font-geist-sans)] text-2xl">{props.cardSubtitle}</span>
             <div className="flex flex-col font-[family-name:var(--font-geist-mono)] text-xl mt-8">
                 <span>{props.cardDetailedText}</span>
@@ -66,8 +66,9 @@ export default function ExperiencePage() {
             <main className="snap-y snap-mandatory h-screen overflow-y-auto">
                 {items.map((value, index) => {
                     return (
-                        <div className="header-wrapper flex flex-col items-center justify-center snap-start h-screen">
-                            <header className="experience flex w-3/4 flex-row border-amber-300 p-12 border-2 rounded-3xl justify-around text-3xl">
+                        <div key={index} className="header-wrapper flex flex-col items-center justify-center snap-start h-screen">
+                            <header
+                                className="experience flex w-3/4 flex-row border-amber-300 p-12 border-2 rounded-3xl justify-around text-3xl">
                                 {index % 2 == 0 && (
                                     <Card {...value}/>
                                 )}
@@ -75,7 +76,7 @@ export default function ExperiencePage() {
                                     <Image src={value.imageSrc[0]} alt="Company" width={200} height={200}/>
                                     <Image src="/images/plus.png" alt="Company" width={50} height={50}/>
                                     <Image src={value.imageSrc[1]} alt="Company" width={200} height={200}/>
-                                </div>):(<Image src={value.imageSrc[0]} alt="Company" width={300} height={150}/>)}
+                                </div>) : (<Image src={value.imageSrc[0]} alt="Company" width={300} height={150}/>)}
                                 {index % 2 != 0 && (
                                     <Card {...value}/>
                                 )}
