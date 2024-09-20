@@ -6,11 +6,10 @@ export default function Navbar() {
         <span className="uppercase bold font-[family-name:var(--font-markPro)] text-xl">Shivam Singh</span>
             <div className="link-container w-1/2 flex flex-row justify-between items-center font-[family-name:var(--font-geist-sans)] text-base cursor-pointer">
                 <Link href="/">About</Link>
-                <Link href="">Projects</Link>
+                <Link href="/projects">Projects</Link>
                 <Link href="/experience">Experience</Link>
-                <Link href="">Skills</Link>
-                <Link href="">Resume</Link>
-                <Link href="">Contact</Link>
+                <Link href="/resume">Resume</Link>
+                <Link href="/contact">Contact</Link>
             </div>
     </div>);
 }

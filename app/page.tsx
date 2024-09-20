@@ -27,13 +27,13 @@ export default function Home() {
                                 <span>I am highly energetic in web development with extensive knowledge<br/>of both frontend and backend systems.</span>
                             </div>
                         </div>
-                        <Image className="rounded-[10em]" src="/images/portfolio-image.jpg" alt="Portfolio Image"
+                        <Image className="rounded-[10em]" src="images/portfolio-image.jpg" alt="Portfolio Image"
                                width="500" height="300"/>
                     </header>
                 </div>
                 <div className="header-wrapper flex flex-col justify-center snap-start h-screen">
                     <header className="flex flex-row justify-around text-5xl">
-                        <Image src="/images/undraw_developer.svg" alt="undraw developer" width="500" height="300"/>
+                        <Image src="images/undraw_developer.svg" alt="undraw developer" width="500" height="300"/>
                         <div className="flex flex-col justify-center">
                             <div className="flex flex-row gap-4">
                                 <span>turning ideas into  real life </span>

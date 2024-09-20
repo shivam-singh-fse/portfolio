@@ -8,7 +8,7 @@ const items = [
         cardTitle: "Associate Consultant",
         cardSubtitle: `Infosys private Limited`,
         cardDetailedText: `I worked as onsite SDE contractor for Amazon. During this time, I worked on their internal applications and services for supply chain. These applications handles/manages functions like cost optimization for amazon vendors, warehouse inventory management, Order cancellation/returns, Vendor Delivery preferences.`,
-        imageSrc: ['/images/Logo-Amazon.png', '/images/infosys-logo.png'],
+        imageSrc: ['images/Logo-Amazon.png', 'images/infosys-logo.png'],
     },
     {
         fromDate: "March 2021",
@@ -16,7 +16,7 @@ const items = [
         cardTitle: "Senior Systems Engineer",
         cardSubtitle: `Tata Consultancy Services (TCS)`,
         cardDetailedText: `During this time, I worked on designing and crafting solutions for databases and backend services. I also lead multiple projects under PoS to design, implement and maintain.`,
-        imageSrc: ['/images/Apple-Logo.png', '/images/TCS-Logo.png'],
+        imageSrc: ['images/Apple-Logo.png', 'images/TCS-Logo.png'],
     },
     {
         fromDate: "January 2020",
@@ -24,7 +24,7 @@ const items = [
         cardTitle: "Systems Engineer",
         cardSubtitle: `Tata Consultancy Services (TCS)`,
         cardDetailedText: `I worked as offsite SDE Contractor for Apple Inc. During this time, I worked on their PoS (Point of Sale) applications and services. I migrated multiple services from monolithic to microservices architecture. I also migrated their client facing web application for PoS from Java Servlets to ReactJS.`,
-        imageSrc: ['/images/Apple-Logo.png', '/images/TCS-Logo.png'],
+        imageSrc: ['images/Apple-Logo.png', 'images/TCS-Logo.png'],
     },
     {
         fromDate: "July 2019",
@@ -33,7 +33,7 @@ const items = [
         cardSubtitle:
             "Tata Consultancy Services (TCS)",
         cardDetailedText: `Landed a job after passing out from graduation. Initial 6-months was training period over various technologies like AR/VR, Machine Learning, etc. As a part of training created a machine learning model to generate 3D-models from an image.`,
-        imageSrc: ['/images/TCS-Logo.png'],
+        imageSrc: ['images/TCS-Logo.png'],
 
     },
 ];
@@ -74,7 +74,7 @@ export default function ExperiencePage() {
                                 )}
                                 {value.imageSrc.length > 1 ? (<div className="flex flex-col items-center">
                                     <Image src={value.imageSrc[0]} alt="Company" width={200} height={200}/>
-                                    <Image src="/images/plus.png" alt="Company" width={50} height={50}/>
+                                    <Image src="images/plus.png" alt="Company" width={50} height={50}/>
                                     <Image src={value.imageSrc[1]} alt="Company" width={200} height={200}/>
                                 </div>) : (<Image src={value.imageSrc[0]} alt="Company" width={300} height={150}/>)}
                                 {index % 2 != 0 && (
